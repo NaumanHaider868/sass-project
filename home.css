@@ -1,0 +1,27 @@
+body h2 {
+  color: red; }
+body .first {
+  background: red;
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 6px 0 blue;
+  -moz-box-shadow: 4px 6px 0 blue;
+  box-shadow: 4px 6px 0 blue; }
+body .second {
+  background: black;
+  color: #fff;
+  width: 270px;
+  height: 200px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px; }
+body .for-me, body .for-you {
+  background: hotpink;
+  color: #fff;
+  margin-top: 10px;
+  float: right; }
+body .for-you {
+  background: lightpink; }

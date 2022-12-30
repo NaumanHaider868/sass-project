@@ -1,0 +1,42 @@
+@mixin bd-radius($value: 5px){
+	-webkit-border-radius: $value;
+	-moz-border-radius: $value;
+	border-radius: $value;
+}
+@mixin box-shadow($left, $right, $blue, $color){
+	-webkit-box-shadow: $left $right $blue $color;
+	-moz-box-shadow: $left $right $blue $color;
+	box-shadow: $left $right $blue $color;
+}
+$color: red;
+
+
+body{
+	h2{
+	color: $color;
+}
+.first{
+	background: $color;
+	width: 200px;
+	height: 200px;
+	@include bd-radius();
+	@include box-shadow(4px,6px,0,blue);
+}
+.second{
+   background: black;
+   color: #fff;
+   width: 270px;
+   height: 200px;
+   @include bd-radius(20px);	
+}
+.for-me{
+	background: hotpink;
+	color: #fff;
+	margin-top: 10px;
+	float: right;
+}
+.for-you{
+	background: lightpink;
+	@extend .for-me
+}
+}
